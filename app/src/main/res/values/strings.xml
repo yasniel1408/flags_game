@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Flags Game</string>
+    <array name="page_indicators">
+        <item>Circle</item>
+        <item>Dash</item>
+        <item>Round Square</item>
+        <item>Square</item>
+        <item>Custom</item>
+    </array>
 </resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#007de3"
+    android:id="@+id/introl"
+    android:fitsSystemWindows="true"
+    tools:context=".Intro">
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right|top"
+        app:layout_anchorGravity="bottom|end"
+        android:background="#ca002f"
+        android:id="@+id/cerrar"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+
+
+
+        <!--<WebView-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150px"></WebView>-->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flags Game"
+            android:textSize="60dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:id="@+id/nombreApk"
+            android:translationY="-220px"
+            />
+
+
+
+
+        <!--<ss.com.bannerslider.Slider-->
+            <!--android:id="@+id/banner_slider1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="400px"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--app:slider_interval="2100"-->
+            <!--app:slider_loopSlides="true"-->
+            <!--app:slider_hideIndicators="true"-->
+            <!--app:slider_selectedSlideIndicator="@drawable/indicator_circle_selected"-->
+            <!--app:slider_unselectedSlideIndicator="@drawable/indicator_circle_unselected"-->
+            <!--/>-->
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:translationY="60px"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOCIETYG INC COMPANY"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white"
+        android:id="@+id/nombreCompannia"
+        android:translationY="300px"
+        />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
