@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:fillBefore="true">
     <set xmlns:android="http://schemas.android.com/apk/res/android"
         android:fillAfter="true"
         android:fillBefore="true">
@@ -6,5 +9,26 @@
             android:duration="1000"
             android:fromXDelta="3000"
             android:toXDelta="-100"></translate>
+        <translate
+            android:duration="300"
+            android:fromXDelta="0"
+            android:startOffset="1000"
+            android:toXDelta="100"></translate>
 
     </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fillAfter="true"
+        android:fillBefore="true"
+        android:startOffset="3000">
+        <translate
+            android:duration="300"
+            android:fromYDelta="0"
+            android:toYDelta="-100"></translate>
+        <translate
+            android:duration="1000"
+            android:fromYDelta="0"
+            android:startOffset="300"
+            android:toYDelta="3000"></translate>
+    </set>
+</set>

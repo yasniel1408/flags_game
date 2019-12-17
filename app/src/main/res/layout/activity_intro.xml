@@ -20,16 +20,6 @@
 
 
 
-
-        <!--<WebView-->
-            <!--android:layout_marginRight="20dp"-->
-            <!--android:layout_marginLeft="20dp"-->
-            <!--android:layout_marginTop="50dp"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="150px"></WebView>-->
-
-
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,25 +29,8 @@
             android:layout_gravity="center_vertical"
             android:textColor="@color/white"
             android:id="@+id/nombreApk"
-            android:translationY="-220px"
+            android:translationY="-140dp"
             />
-
-
-
-
-        <!--<ss.com.bannerslider.Slider-->
-            <!--android:id="@+id/banner_slider1"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="400px"-->
-            <!--android:layout_marginLeft="20dp"-->
-            <!--android:layout_marginRight="20dp"-->
-            <!--android:layout_marginTop="20dp"-->
-            <!--app:slider_interval="2100"-->
-            <!--app:slider_loopSlides="true"-->
-            <!--app:slider_hideIndicators="true"-->
-            <!--app:slider_selectedSlideIndicator="@drawable/indicator_circle_selected"-->
-            <!--app:slider_unselectedSlideIndicator="@drawable/indicator_circle_unselected"-->
-            <!--/>-->
 
     <ProgressBar
         android:layout_width="wrap_content"
@@ -65,10 +38,9 @@
         android:indeterminate="true"
         android:gravity="center"
         android:layout_gravity="center_vertical"
-        android:translationY="60px"
+        android:translationY="-10px"
 
         />
-
 
     <TextView
         android:layout_width="match_parent"
@@ -79,9 +51,18 @@
         android:layout_gravity="center_vertical"
         android:textColor="@color/white"
         android:id="@+id/nombreCompannia"
-        android:translationY="300px"
+        android:translationY="100dp"
         />
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/societyg_logo_nobackground"
+        android:translationY="170dp"
+        android:id="@+id/logo"
+        />
 
 
 

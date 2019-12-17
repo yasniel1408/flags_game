@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">Flags Game</string>
-    <array name="page_indicators">
-        <item>Circle</item>
-        <item>Dash</item>
-        <item>Round Square</item>
-        <item>Square</item>
-        <item>Custom</item>
-    </array>
+    <string name="descripcion">Disfruta y aprende con las banderas</string>
+    <string name="acertados">Acertados</string>
+    <string name="corregidos">Corregidos</string>
+    <string name="errores">Errores</string>
+    <string name="vidas">Vidas</string>
+    <string name="ratingBar">¡Danos una calificación!</string>
+    <string name="faltan">Faltan</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="progreso">Progreso:</string>
+    <string name="nombreA">Nombre y Apellido(s)</string>
+    <string name="enviar">Enviar</string>
+    <string name="escribe">Escribe tu opinión</string>
 </resources>

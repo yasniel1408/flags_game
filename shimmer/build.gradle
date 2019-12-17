@@ -1,0 +1,16 @@
+// Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 26
+
+  defaultConfig {
+    minSdkVersion 14
+  }
+}
+
+dependencies {
+  compile "com.android.support:support-annotations:25.2.0"
+}
+

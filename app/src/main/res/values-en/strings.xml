@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flags Game</string>
+    <string name="descripcion">Enjoys and learns whit the flags</string>
+    <string name="acertados">Done</string>
+    <string name="corregidos">Corrected</string>
+    <string name="errores">Errors</string>
+    <string name="vidas">Lives</string>
+    <string name="comenzar">Begin Now</string>
+    <string name="progreso">Progress:</string>
+    <string name="faltan">New</string>
+    <string name="ratingBar">!Send us a qualification¡</string>
+    <string name="nombreA">Name and Last name(s)</string>
+    <string name="enviar">Submit</string>
+    <string name="escribe">Write your Review</string>
+
+</resources>
