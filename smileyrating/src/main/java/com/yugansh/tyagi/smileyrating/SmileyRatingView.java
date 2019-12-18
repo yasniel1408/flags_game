@@ -22,8 +22,22 @@ public class SmileyRatingView extends View {
     private int faceColor, eyesColor, mouthColor, tongueColor;
     private RectF faceBgOval, sadOval, neutralOval, slightHappyOval, happyOval, amazingOval, tongueOval;
     private Paint paint;
-    int centerOffset, viewWidth, viewHeight,
-            whatToDraw = 2, defaultRating, strokeWidth, eyeRadius;
+    int centerOffset;
+    int viewWidth;
+    int viewHeight;
+    int whatToDraw = 2;
+
+    public int getDefaultRating() {
+        return defaultRating;
+    }
+
+    public void setDefaultRating(int defaultRating) {
+        this.defaultRating = defaultRating;
+    }
+
+    int defaultRating;
+    int strokeWidth;
+    int eyeRadius;
 
     int currEyeLX, currEyeRX, currEyeY;
 

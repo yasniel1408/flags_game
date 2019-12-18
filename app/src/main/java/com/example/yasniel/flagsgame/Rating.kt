@@ -10,14 +10,15 @@ import kotlinx.android.synthetic.main.activity_rating.*
 
 class Rating : AppCompatActivity() {
 
-    private val ajustes: SharedPreferences? = getSharedPreferences("PREFERENCIAS", 0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rating)
+        val ajustes: SharedPreferences? = getSharedPreferences("PREFERENCIAS", 0)
 
-        rating_bar.rating = ajustes?.getString("rating","")!!.toFloat()
+        rating_bar.rating = ajustes?.getFloat("rating", 0F)!!
         review_box.setText(ajustes?.getString("text_rating",""))
+        smiley_view.defaultRating = rating_bar.rating.toInt() //Esto esta haciendo lo q le da la gana!!!!!!
 
         rating_bar.setOnRatingBarChangeListener { ratingBar: RatingBar, fl: Float, b: Boolean ->
             Log.d("Rating", fl.toString())
@@ -26,9 +27,8 @@ class Rating : AppCompatActivity() {
 
 
         send.setOnClickListener {
-
             val editor: SharedPreferences.Editor = ajustes.edit()
-            editor.putString("rating", rating_bar.rating.toString())
+            editor.putFloat("rating", rating_bar.rating)
             editor.commit()
 
             editor.putString("text_rating", review_box.text.toString())

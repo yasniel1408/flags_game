@@ -12,4 +12,5 @@
     <string name="nombreA">Nombre y Apellido(s)</string>
     <string name="enviar">Enviar</string>
     <string name="escribe">Escribe tu opinión</string>
+    <string name="datos">Datos de Usuario:</string>
 </resources>

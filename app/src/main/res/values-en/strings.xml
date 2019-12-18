@@ -13,5 +13,7 @@
     <string name="nombreA">Name and Last name(s)</string>
     <string name="enviar">Submit</string>
     <string name="escribe">Write your Review</string>
+    <string name="datos">User\'s Data:</string>
+
 
 </resources>
