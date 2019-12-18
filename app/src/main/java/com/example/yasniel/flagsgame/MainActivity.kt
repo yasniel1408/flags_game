@@ -116,8 +116,8 @@ class MainActivity : AppCompatActivity() {
         val cargarFoto = layout!!.findViewById(R.id.fotoSelect) as ImageView
 
         cargarFoto.setOnClickListener {
-//            val intent = Intent(Intent.ACTION_CHOOSER)
-//            intent.setType("image/*")
+            val intent = Intent(Intent.ACTION_CHOOSER)
+            intent.setType("image/*")//TRABAJANDO AQUI
         }
 
 
