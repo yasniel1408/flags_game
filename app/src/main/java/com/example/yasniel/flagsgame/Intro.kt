@@ -16,6 +16,7 @@ class Intro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
 
+
         val mover_derecha: Animation = AnimationUtils.loadAnimation(this, R.anim.mover_derecha)
         val mover_derecha2: Animation = AnimationUtils.loadAnimation(this, R.anim.mover_derecha)
         val mover_izquierda: Animation = AnimationUtils.loadAnimation(this, R.anim.mover_izquierda)
