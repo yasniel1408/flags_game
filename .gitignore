@@ -1,5 +1,10 @@
 *.iml
 .gradle
+/smileyrating/build.gradle
+/app/build.gradle
+/build.gradle
+/gradlew
+/gradle.properties
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
