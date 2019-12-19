@@ -9,14 +9,6 @@
     android:fitsSystemWindows="true"
     tools:context=".Intro">
 
-    <ImageButton
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_gravity="right|top"
-        app:layout_anchorGravity="bottom|end"
-        android:background="#ca002f"
-        android:id="@+id/cerrar"
-        android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
 
 

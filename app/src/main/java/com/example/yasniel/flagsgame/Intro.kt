@@ -48,7 +48,7 @@ class Intro : AppCompatActivity() {
 
 
 
-        cerrar.setOnClickListener() {
+        introl.setOnClickListener() {
             val mainIntent = Intent().setClass(
                     this@Intro, MainActivity::class.java)
             startActivity(mainIntent)
