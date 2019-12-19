@@ -6,6 +6,7 @@ import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.Typeface
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -36,6 +37,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val font: Typeface = Typeface.createFromAsset( assets, "font/pricedown.ttf" )
+
+        nombreApellidos.setTypeface(font)
+        calificacionText.setTypeface(font)
+        comenzar.setTypeface(font)
+        flag_top.setTypeface(font)
+        flag_top_caption.setTypeface(font)
 
         val ajustes: SharedPreferences? = getSharedPreferences("PREFERENCIAS", 0)
 
@@ -69,7 +77,7 @@ class MainActivity : AppCompatActivity() {
             imagePrew.setImageResource(R.drawable.persona)
         }else{
             fotoPersona.setImageURI(Uri.parse(direccionImagen))
-            imagePrew.setImageURI(Uri.parse(direccionImagen))
+          //  imagePrew.setImageURI(Uri.parse(direccionImagen)) | linea bug
         }
 
 

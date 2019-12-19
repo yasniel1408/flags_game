@@ -1,6 +1,7 @@
 package com.example.yasniel.flagsgame
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.Animation
@@ -15,6 +16,12 @@ class Intro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
+
+        val logo_apk: Typeface = Typeface.createFromAsset( assets, "font/pricedown.ttf" )
+        nombreApk.setTypeface(logo_apk)
+
+        val compannia_apk: Typeface = Typeface.createFromAsset( assets, "font/akbar.ttf" )
+        nombreCompannia.setTypeface(compannia_apk)
 
 
         val mover_derecha: Animation = AnimationUtils.loadAnimation(this, R.anim.mover_derecha)
