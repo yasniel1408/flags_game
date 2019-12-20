@@ -7,4 +7,13 @@
 
     <color name="rating_inactive">#929292</color>
     <color name="rating_active">#f8b83b</color>
+
+    <color name="colorEmpty">#EDEDED</color>
+
+    <color name="aceptados">#20730f</color>
+    <color name="corregidos">#f8b83b</color>
+    <color name="errores">#c41919</color>
+    <color name="faltan">#1017d9</color>
+
+
 </resources>

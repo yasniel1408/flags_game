@@ -40,9 +40,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.FullScreen" />
         <activity
-            android:name=".ScrollingActivityDetalleOpcion"
-            android:label="@string/title_activity_scrolling_detalle_opcion"
-            android:theme="@style/AppTheme.FullScreen"></activity>
+            android:name=".TransitionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen" />
     </application>
 
 </manifest>
