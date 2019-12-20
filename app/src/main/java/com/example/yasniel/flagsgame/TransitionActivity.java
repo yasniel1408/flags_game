@@ -12,7 +12,9 @@ import android.transition.Transition;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.yasniel.flagsgame.utils.TransitionUtils;
 
@@ -20,6 +22,8 @@ public class TransitionActivity extends AppCompatActivity {
 
     NestedScrollView nestedScrollView;
     RelativeLayout relativeLayout;
+    TextView numeroTV, textoOpcion;
+    ImageView imageView;
 
     @SuppressLint("ResourceAsColor")
     @Override
@@ -28,21 +32,32 @@ public class TransitionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_transition);
         nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
         relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayoutPaCambiar);
+        numeroTV = (TextView) findViewById(R.id.textView);
+        textoOpcion = (TextView) findViewById(R.id.textoOpcion);
+        imageView = (ImageView) findViewById(R.id.iconoDetalle);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Intent intent = getIntent();
             relativeLayout.setTransitionName(intent.getStringExtra("transition"));
             String color = intent.getStringExtra("color");
-
-            if(color.equals("1"))
+            numeroTV.setText(intent.getStringExtra("numero"));
+            if(color.equals("1")) {
                 relativeLayout.setBackgroundResource(R.color.aceptados);
-            else if(color.equals("2"))
+                imageView.setImageResource(R.drawable.pdlg_icon_successgrande);
+                textoOpcion.setText(R.string.acertados);
+            }else if(color.equals("2")) {
                 relativeLayout.setBackgroundResource(R.color.corregidos);
-            else if(color.equals("3"))
+                imageView.setImageResource(R.drawable.ic_done_all_white_24dp);
+                textoOpcion.setText(R.string.corregidos);
+            }else if(color.equals("3")) {
                 relativeLayout.setBackgroundResource(R.color.errores);
-            else if(color.equals("4"))
+                imageView.setImageResource(R.drawable.ic_warning_white_48dp);
+                textoOpcion.setText(R.string.errores);
+            }else if(color.equals("4")) {
                 relativeLayout.setBackgroundResource(R.color.faltan);
-
+                imageView.setImageResource(R.drawable.ic_control_point_white_48dp);
+                textoOpcion.setText(R.string.faltan);
+            }
 
             Transition transition = getWindow().getSharedElementEnterTransition();
             transition.addListener(new Transition.TransitionListener() {

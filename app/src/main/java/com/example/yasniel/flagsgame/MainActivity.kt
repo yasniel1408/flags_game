@@ -164,6 +164,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "1")
+                intent.putExtra("numero", numeroAceptados.text)
                 val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, correcto, "transition1")
                 ActivityCompat.startActivity(this, intent, options.toBundle())
 
@@ -186,6 +187,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "2")
+                intent.putExtra("numero", numeroCorregidos.text)
                 val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, corregidos, "transition1")
                 ActivityCompat.startActivity(this, intent, options.toBundle())
 
@@ -208,6 +210,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "3")
+                intent.putExtra("numero", numeroErrores.text)
                 val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, errores, "transition1")
                 ActivityCompat.startActivity(this, intent, options.toBundle())
 
@@ -230,6 +233,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "4")
+                intent.putExtra("numero", numeroFaltan.text)
                 val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, falta, "transition1")
                 ActivityCompat.startActivity(this, intent, options.toBundle())
 
