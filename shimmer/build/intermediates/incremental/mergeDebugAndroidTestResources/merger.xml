@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="__tested_artifact__::shimmer$Generated" generated="true"><source path="D:\PROYECTOS\FlagsGame\shimmer\build\intermediates\bundles\debug\res"/></dataSet><dataSet config="__tested_artifact__::shimmer" from-dependency="true" generated-set="__tested_artifact__::shimmer$Generated"><source path="D:\PROYECTOS\FlagsGame\shimmer\build\intermediates\bundles\debug\res"><file path="D:\PROYECTOS\FlagsGame\shimmer\build\intermediates\bundles\debug\res\values\values.xml" qualifiers=""><declare-styleable name="ShimmerFrameLayout"><attr format="boolean" name="shimmer_clip_to_children"/><attr format="boolean" name="shimmer_colored"/><attr format="color" name="shimmer_base_color"/><attr format="color" name="shimmer_highlight_color"/><attr format="float" name="shimmer_base_alpha"/><attr format="float" name="shimmer_highlight_alpha"/><attr format="boolean" name="shimmer_auto_start"/><attr format="integer" name="shimmer_duration"/><attr format="integer" name="shimmer_repeat_count"/><attr format="integer" name="shimmer_repeat_delay"/><attr format="enum" name="shimmer_repeat_mode">
+      <enum name="restart" value="1"/>
+      <enum name="reverse" value="2"/>
+    </attr><attr format="enum" name="shimmer_direction">
+      <enum name="left_to_right" value="0"/>
+      <enum name="top_to_bottom" value="1"/>
+      <enum name="right_to_left" value="2"/>
+      <enum name="bottom_to_top" value="3"/>
+    </attr><attr format="float" name="shimmer_dropoff"/><attr format="dimension" name="shimmer_fixed_width"/><attr format="dimension" name="shimmer_fixed_height"/><attr format="float" name="shimmer_intensity"/><attr format="float" name="shimmer_width_ratio"/><attr format="float" name="shimmer_height_ratio"/><attr format="enum" name="shimmer_shape">
+      <enum name="linear" value="0"/>
+      <enum name="radial" value="1"/>
+    </attr><attr format="float" name="shimmer_tilt"/></declare-styleable></file></source></dataSet><dataSet config="main$Generated" generated="true"><source path="D:\PROYECTOS\FlagsGame\shimmer\src\androidTest\res"/><source path="D:\PROYECTOS\FlagsGame\shimmer\build\generated\res\rs\androidTest\debug"/><source path="D:\PROYECTOS\FlagsGame\shimmer\build\generated\res\resValues\androidTest\debug"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\PROYECTOS\FlagsGame\shimmer\src\androidTest\res"/><source path="D:\PROYECTOS\FlagsGame\shimmer\build\generated\res\rs\androidTest\debug"/><source path="D:\PROYECTOS\FlagsGame\shimmer\build\generated\res\resValues\androidTest\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="D:\PROYECTOS\FlagsGame\shimmer\src\androidTestDebug\res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="D:\PROYECTOS\FlagsGame\shimmer\src\androidTestDebug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="ShimmerFrameLayout"><attr format="boolean" name="shimmer_clip_to_children"/><attr format="boolean" name="shimmer_colored"/><attr format="color" name="shimmer_base_color"/><attr format="color" name="shimmer_highlight_color"/><attr format="float" name="shimmer_base_alpha"/><attr format="float" name="shimmer_highlight_alpha"/><attr format="boolean" name="shimmer_auto_start"/><attr format="integer" name="shimmer_duration"/><attr format="integer" name="shimmer_repeat_count"/><attr format="integer" name="shimmer_repeat_delay"/><attr format="enum" name="shimmer_repeat_mode">
+      <enum name="restart" value="1"/>
+      <enum name="reverse" value="2"/>
+    </attr><attr format="enum" name="shimmer_direction">
+      <enum name="left_to_right" value="0"/>
+      <enum name="top_to_bottom" value="1"/>
+      <enum name="right_to_left" value="2"/>
+      <enum name="bottom_to_top" value="3"/>
+    </attr><attr format="float" name="shimmer_dropoff"/><attr format="dimension" name="shimmer_fixed_width"/><attr format="dimension" name="shimmer_fixed_height"/><attr format="float" name="shimmer_intensity"/><attr format="float" name="shimmer_width_ratio"/><attr format="float" name="shimmer_height_ratio"/><attr format="enum" name="shimmer_shape">
+      <enum name="linear" value="0"/>
+      <enum name="radial" value="1"/>
+    </attr><attr format="float" name="shimmer_tilt"/></declare-styleable></configuration></mergedItems></merger>

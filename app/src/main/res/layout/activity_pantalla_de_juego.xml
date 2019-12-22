@@ -22,26 +22,15 @@
                 app:cardElevation="2dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="70dp">
 
-                <LinearLayout
+
+            <LinearLayout
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content">
-
-
-
-                    <ImageView
-                        android:elevation="7dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginRight="50dp"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@mipmap/ic_launcher"/>
 
                     <ImageView
                         android:elevation="7dp"
@@ -166,7 +155,7 @@
                         android:layout_height="100dp"
                         android:background="#FFF"
                         android:scaleType="fitXY"
-                        android:src="@drawable/cuba" />
+                        android:src="@drawable/flag_of_andorra" />
 
 
                 </LinearLayout>
@@ -187,7 +176,7 @@
                         android:layout_height="100dp"
                         android:background="#FFF"
                         android:scaleType="fitXY"
-                        android:src="@drawable/bahamas" />
+                        android:src="@drawable/flag_of_angola" />
 
                 </LinearLayout>
 
@@ -217,7 +206,7 @@
                         android:layout_height="100dp"
                         android:background="#FFF"
                         android:scaleType="fitXY"
-                        android:src="@drawable/vaticano" />
+                        android:src="@drawable/flag_of_afghanistan" />
 
                 </LinearLayout>
 
@@ -236,7 +225,7 @@
                         android:layout_height="100dp"
                         android:background="#FFF"
                         android:scaleType="fitXY"
-                        android:src="@drawable/cabo_verde" />
+                        android:src="@drawable/flag_of_albania" />
 
                 </LinearLayout>
 

@@ -43,6 +43,8 @@
             android:name=".TransitionActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".GaleriaBanderas" />
+        <activity android:name=".DetallePais"></activity>
     </application>
 
 </manifest>

@@ -33,11 +33,6 @@ class MainActivity : AppCompatActivity() {
     var nombre: String? = null
     var direccionImagen: String? = null
 
-    var expandView: View? = null
-    var expandableView: View? = null
-
-    var expanded: Boolean = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -153,14 +148,6 @@ class MainActivity : AppCompatActivity() {
 
         correcto.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val params = expandView?.getLayoutParams()
-                params?.height = if (expanded)
-                    getResources().getDimensionPixelOffset(R.dimen.card_expanded_height)
-                else
-                    getResources().getDimensionPixelOffset(R.dimen.card_default_height)
-                expandView?.setLayoutParams(params)
-                expandableView?.setAlpha(if (expanded) 1.0f else 0.0f)
-
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "1")
@@ -176,14 +163,6 @@ class MainActivity : AppCompatActivity() {
         }
         corregidos.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val params = expandView?.getLayoutParams()
-                params?.height = if (expanded)
-                    getResources().getDimensionPixelOffset(R.dimen.card_expanded_height)
-                else
-                    getResources().getDimensionPixelOffset(R.dimen.card_default_height)
-                expandView?.setLayoutParams(params)
-                expandableView?.setAlpha(if (expanded) 1.0f else 0.0f)
-
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "2")
@@ -199,14 +178,6 @@ class MainActivity : AppCompatActivity() {
         }
         errores.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val params = expandView?.getLayoutParams()
-                params?.height = if (expanded)
-                    getResources().getDimensionPixelOffset(R.dimen.card_expanded_height)
-                else
-                    getResources().getDimensionPixelOffset(R.dimen.card_default_height)
-                expandView?.setLayoutParams(params)
-                expandableView?.setAlpha(if (expanded) 1.0f else 0.0f)
-
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "3")
@@ -222,14 +193,6 @@ class MainActivity : AppCompatActivity() {
         }
         falta.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val params = expandView?.getLayoutParams()
-                params?.height = if (expanded)
-                    getResources().getDimensionPixelOffset(R.dimen.card_expanded_height)
-                else
-                    getResources().getDimensionPixelOffset(R.dimen.card_default_height)
-                expandView?.setLayoutParams(params)
-                expandableView?.setAlpha(if (expanded) 1.0f else 0.0f)
-
                 val intent = Intent(this, TransitionActivity::class.java)
                 intent.putExtra("transition", "transition1")
                 intent.putExtra("color", "4")
@@ -244,7 +207,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
+        ayuda.setOnClickListener {
+            val mainIntent = Intent().setClass(
+                    this@MainActivity, GaleriaBanderas::class.java)
+            startActivity(mainIntent)
+            overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
+            this.finish()
+        }
 
     }
 

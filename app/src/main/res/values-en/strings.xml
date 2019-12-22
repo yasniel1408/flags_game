@@ -14,6 +14,8 @@
     <string name="enviar">Submit</string>
     <string name="escribe">Write your Review</string>
     <string name="datos">User\'s Data:</string>
+    <string name="ayuda">Help</string>
+    <string name="aprende">Learns more than the flags</string>
 
 
 </resources>

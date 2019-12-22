@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#007de3"
+    android:background="@color/backgaundPrincipal"
     tools:context="com.example.yasniel.flagsgame.MainActivity">
 
 
@@ -24,9 +24,10 @@
                 app:cardElevation="2dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="70dp">
 
-                <LinearLayout
+
+            <LinearLayout
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
@@ -404,9 +405,21 @@
                     android:layout_marginTop="20dp"
                     android:id="@+id/comenzar"
                     android:layout_gravity="center"
-                    android:gravity="bottom|end"
+                    android:gravity="center_horizontal"
                     android:textColor="@android:color/background_light"
                     android:backgroundTint="@android:color/holo_red_dark"
+                    />
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
+                    android:text="@string/ayuda"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ayuda"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/background_light"
+                    android:backgroundTint="#3cca0d"
                     />
 
 
@@ -421,74 +434,6 @@
 
 
     </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/expandableView"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:layout_below="@+id/circleView"
-        android:layout_marginTop="12dp"
-        android:orientation="vertical">
-
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="12dp"
-            android:paddingLeft="12dp"
-            android:paddingStart="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <View
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/empty_rectangle" />
-
-                <View
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp"
-                    android:background="@drawable/empty_rectangle" />
-
-                <View
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp"
-                    android:background="@drawable/empty_rectangle" />
-
-                <View
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp"
-                    android:background="@drawable/empty_rectangle" />
-
-            </LinearLayout>
-
-        </android.support.v4.widget.NestedScrollView>
-
-        <View
-            android:layout_width="180dp"
-            android:layout_height="10dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorEmpty" />
-
-        <View
-            android:layout_width="140dp"
-            android:layout_height="10dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/colorEmpty" />
-
-    </LinearLayout>
 
 </LinearLayout>
 
