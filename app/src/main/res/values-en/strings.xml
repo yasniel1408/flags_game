@@ -16,6 +16,9 @@
     <string name="datos">User\'s Data:</string>
     <string name="ayuda">Help</string>
     <string name="aprende">Learns more than the flags</string>
+    <string name="compartiendo">Sharing application</string>
+    <string name="compartir">I recommend you this apk:</string>
+    <string name="compartir2">Share application</string>
 
 
 </resources>

@@ -22,6 +22,7 @@ class DetallePais : AppCompatActivity() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val posicion = intent?.getStringExtra("pos")
+            relativeLayoutPaCambiar.setTransitionName(intent.getStringExtra("transition"))
 
 
             val transition = window.sharedElementEnterTransition

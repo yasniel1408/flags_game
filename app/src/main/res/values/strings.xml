@@ -14,7 +14,10 @@
     <string name="enviar">Enviar</string>
     <string name="escribe">Escribe tu opinión</string>
     <string name="datos">Datos de Usuario:</string>
-    <string name="aprende">Aprende más de la banderas</string>
+    <string name="aprende">Aprende más de las banderas</string>
+    <string name="compartiendo">Compartiendo aplicación...</string>
+    <string name="compartir">Te recomiendo esta apk: </string>
+    <string name="compartir2">Compartir aplicación</string>
 
 
     <!--<string name="afganistan">Afganistán</string>-->

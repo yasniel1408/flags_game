@@ -1,7 +1,5 @@
 package com.example.yasniel.flagsgame
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
 import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
@@ -17,14 +15,12 @@ import android.support.v4.app.ActivityOptionsCompat
 import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewAnimationUtils
 import android.view.animation.*
 import android.widget.EditText
 import android.widget.ImageView
-import com.example.yasniel.flagsgame.utils.ExpandAnimation
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_rating.*
-import kotlinx.android.synthetic.main.dialogadicionar.*
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +29,8 @@ class MainActivity : AppCompatActivity() {
     var layout: View? = null
     var nombre: String? = null
     var direccionImagen: String? = null
+    var appfile: File? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -221,6 +219,34 @@ class MainActivity : AppCompatActivity() {
             startActivity(mainIntent)
             overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
             this.finish()
+        }
+
+
+        share.setOnClickListener {
+            val mainIntent = Intent(Intent.ACTION_MAIN, null)
+            mainIntent.addCategory(Intent.CATEGORY_LAUNCHER)
+            val apps = packageManager.queryIntentActivities(mainIntent, 0)
+            for (i in apps.indices) {
+                if (apps[i].activityInfo.packageName == this@MainActivity.getPackageName()) {
+                    appfile = File(apps[i].activityInfo.applicationInfo.publicSourceDir)
+                }
+            }
+
+            val intentShareFile = Intent(Intent.ACTION_SEND)
+            var t: TextView? = null
+            t?.setText(R.string.compartir2)
+            var t2: TextView? = null
+            t2?.setText(R.string.compartir)
+            var t3: TextView? = null
+            t3?.setText(R.string.compartiendo)
+
+            if (appfile!!.exists()) {
+                intentShareFile.type = "application/apk"
+                intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + appfile))
+                intentShareFile.putExtra(Intent.EXTRA_SUBJECT, t3?.text)
+                intentShareFile.putExtra(Intent.EXTRA_TEXT, t2?.text)
+                startActivityForResult(Intent.createChooser(intentShareFile, t?.text), 777)
+            }
         }
 
     }
