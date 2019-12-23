@@ -29,7 +29,7 @@ class PantallaDeJuego : AppCompatActivity() {
         if(urlImagen.equals("")){
             imagenPersonaJuego.setImageResource(R.drawable.persona)
         }else{
-            imagenPersonaJuego.setImageURI(Uri.parse(urlImagen))
+            //imagenPersonaJuego.setImageURI(Uri.parse(urlImagen)) | linea bugg
         }
 
     }
