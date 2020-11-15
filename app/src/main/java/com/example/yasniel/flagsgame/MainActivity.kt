@@ -19,6 +19,7 @@ import android.view.animation.*
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
         }else{
             fotoPersona.setImageURI(Uri.parse(direccionImagen))
           //  imagePrew.setImageURI(Uri.parse(direccionImagen)) | linea bug
+//            Toast.makeText(this, direccionImagen, Toast.LENGTH_LONG).show()
         }
 
 
@@ -130,7 +132,9 @@ class MainActivity : AppCompatActivity() {
             val mainIntent = Intent().setClass(
                     this@MainActivity, PantallaDeJuego::class.java)
             startActivity(mainIntent)
-            overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+                overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
+            }
             this.finish()
         }
 
@@ -138,7 +142,9 @@ class MainActivity : AppCompatActivity() {
             val mainIntent = Intent().setClass(
                     this@MainActivity, Rating::class.java)
             startActivity(mainIntent)
-            overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+                overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
+            }
             this.finish()
         }
 
@@ -217,7 +223,9 @@ class MainActivity : AppCompatActivity() {
             val mainIntent = Intent().setClass(
                     this@MainActivity, GaleriaBanderas::class.java)
             startActivity(mainIntent)
-            overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+                overridePendingTransition(R.anim.animate_slide_left_enter,R.anim.animate_slide_left_exit)
+            }
             this.finish()
         }
 

@@ -1,6 +1,10 @@
 {
     "logs": [
         {
+            "outputFile": "Z:\\PROYECTOS\\FlagsGame\\shimmer\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": []
+        },
+        {
             "outputFile": "D:\\PROYECTOS\\FlagsGame\\shimmer\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
             "map": []
         }
